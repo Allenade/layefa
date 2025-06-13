@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +15,16 @@ export function Navbar() {
         transition={{ duration: 0.7, delay: 0.2 }}
         className="pointer-events-auto bg-white shadow-lg flex items-center justify-between transition-all duration-300 px-8 py-4 rounded-full max-w-5xl w-full mx-auto border border-gray-200 relative"
       >
-        <span className="font-bold text-green-700">Orainx</span>
+        <span className="w-10 h-10">
+          <Image
+            src="/image/logo.jpeg"
+            alt="Server Equipment"
+            width={200}
+            height={200}
+            className="w-full h-full rounded-2xl object-cover"
+            priority
+          />
+        </span>
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-6">
           <Link

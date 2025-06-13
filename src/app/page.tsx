@@ -53,9 +53,9 @@ export default function Home() {
                   Network and Cloud Engineering Services
                 </h1>
                 <p className="text-base md:text-lg max-w-2xl">
-                  We provide network and cloud engineering services to help you
-                  build, secure, and scale your infrastructure to the next
-                  level.
+                  At <span className="text-[#4ADE80]">Orainx</span> We provide
+                  network and cloud engineering services to help you build,
+                  secure, and scale your infrastructure to the next level.
                 </p>
                 <div className="mt-6 md:mt-8">
                   <Link
