@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-// import { Footer } from "@/component/Footer";
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from "framer-motion";
-
+import { Footer } from "../component/Footer";
 export default function Home() {
   // const plans = [
   //   {
@@ -218,11 +217,11 @@ export default function Home() {
       </section>
 
       {/* Plans Section */}
-      <section className="container mx-auto px-4 py-16">
+      {/* <section className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center mb-10">
           Choose Your Plan
         </h2>
-        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {plans.map((plan, idx) => (
             <motion.div
               key={plan.name}
@@ -255,8 +254,8 @@ export default function Home() {
               </a>
             </motion.div>
           ))}
-        </div> */}
-      </section>
+        </div>
+      </section> */}
 
       {/* Floating WhatsApp Button */}
       <motion.a
@@ -271,7 +270,7 @@ export default function Home() {
         <FaWhatsapp className="w-6 h-6 text-white" />
       </motion.a>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
